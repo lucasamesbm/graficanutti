@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../../assets/images/logo.jpg";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -46,7 +47,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex shrink-0">
           <img
-            src="src/assets/images/logo.jpg"
+            src={logo}
             alt="Nutti Gráfica"
             className="h-12 w-auto object-contain"
           />

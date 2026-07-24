@@ -1,5 +1,6 @@
 // src/components/sections/FooterSection.jsx
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo.jpg";
 
 const products = [
   { name: "Camiseta Algodão Premium", slug: "" },
@@ -26,7 +27,7 @@ export default function FooterSection() {
           <div className="col-span-2 lg:col-span-1">
             <Link to="/" className="inline-block mb-3">
               <img
-                src="src/assets/images/logo.jpg"
+                src={logo}
                 alt="Gráfica Nutti"
                 className="h-16 md:h-20 w-auto"
               />

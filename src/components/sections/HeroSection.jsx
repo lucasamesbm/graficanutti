@@ -1,5 +1,6 @@
 // src/components/sections/HeroSection.jsx
 import { Link } from "react-router-dom";
+import banner from "../../assets/images/banner.png";
 
 export default function HeroSection() {
   const whatsappNumber = "5500000000000";
@@ -16,7 +17,7 @@ export default function HeroSection() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div className="absolute top-0 left-0 w-2 h-full bg-red-600 z-10" />
               <img
-                src="src/assets/images/banner.png"
+                src={banner}
                 alt="Nutti Gráfica"
                 className="w-full h-80 sm:h-96 lg:h-135 object-cover"
               />
